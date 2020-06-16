@@ -3,7 +3,7 @@
 // the greater one.
 
 // Define the function
-function max(num1, num2) {
+const max = function(num1, num2) {
     return num1 > num2 ? num1 : num2;
 }
 
