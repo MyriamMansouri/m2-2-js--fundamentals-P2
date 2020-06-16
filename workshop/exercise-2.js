@@ -4,8 +4,8 @@
 
 // Define the function
 const max = function(num1, num2) {
-    return num1 > num2 ? num1 : num2;
+    console.log(num1 > num2 ? num1 : num2) ;
 }
 
 // Call the function
-console.log(max(12, 43));
+max(12, 43);
