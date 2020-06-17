@@ -9,7 +9,18 @@
 // 371 is an Armstrong number since 3^3 + 7^3 + 1^3 = 371.
 
 let armstrongNumbers = [];
+ 
+for(let num = 1; num < 372 ;num++ ) {
 
-// write your loop here...
+    let numArr = num.toString().split('');
+    let armstrongNumber = numArr.reduce( (acc, value) => acc + Math.pow(value,3) , 0 )
+
+    if (armstrongNumber === num) {
+        armstrongNumbers.push(num);
+    };
+
+   
+}
+
 
 console.log(armstrongNumbers);
