@@ -5,7 +5,7 @@
 // Hint: consider using .filter(), .indexOf() and .lastIndexOf()
 
 function filterNonUnique(array) {
-    let outputArray = array.filter( el => array.indexOf(el) !== array.lastIndexOf(el))
+    let outputArray = array.filter( el => array.indexOf(el) === array.lastIndexOf(el))
     return outputArray;
 }
 

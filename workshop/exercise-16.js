@@ -10,16 +10,18 @@
 
 let armstrongNumbers = [];
  
-for(let num = 1; num < 372 ;num++ ) {
+for(let num = 0; num < 1000 ;num++ ) {
 
     let numArr = num.toString().split('');
-    let armstrongNumber = numArr.reduce( (acc, value) => acc + Math.pow(value,3) , 0 )
+    let numLength = numArr.length;
+    let armstrongNumber = numArr.reduce( (acc, value) => {
+        return acc + Math.pow(value, numLength) 
+    }, 0)
 
     if (armstrongNumber === num) {
         armstrongNumbers.push(num);
     };
 
-   
 }
 
 

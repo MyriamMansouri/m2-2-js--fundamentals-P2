@@ -7,7 +7,7 @@
 // Write a function that accepts a list of numbers and returns a new list with
 // all of the even numbers removed.
 const removeEvens = function(lst) {
-  return lst.filter(el => el % 2 ===0)
+  return lst.filter(el => el % 2 !==0)
 }
 
   // lst is an array of strings
